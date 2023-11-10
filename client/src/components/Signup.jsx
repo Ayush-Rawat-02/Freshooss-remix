@@ -3,8 +3,9 @@ import { useContext, useState } from 'react';
 import { MyContext } from '../../MyContext';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from "../api/axios";
+import { toast } from "react-toastify";
 
-function Signup({ signOpt, setSignOpt, setToggle, toast }) {
+function Signup({ signOpt, setSignOpt, setToggle }) {
     const { setUserDetails } = useContext(MyContext)
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -39,12 +40,13 @@ function Signup({ signOpt, setSignOpt, setToggle, toast }) {
             setToggle(false);
             localStorage.setItem("userDetails", JSON.stringify(details));
             setUserDetails(details);;
-            navigate("/dashboard", { state: details });
+            if (response.data.isAdmin == false) navigate("/dashboard", { state: details });
+            else navigate('/admin', { state: details })
         }
         catch (err) {
             console.log(err);
             setLoading(false)
-            toast.error(err.message, { position: toast.POSITION.TOP_RIGHT })
+            toast.error(err.response.data.error, { position: toast.POSITION.TOP_RIGHT })
         }
     }
     return (
