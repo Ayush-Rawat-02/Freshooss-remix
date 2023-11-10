@@ -34,7 +34,7 @@ function Profile() {
     }
     if (userDetails != null)
         return (
-            <div className='flex flex-col sm:min-h-[70vh] items-center justify-center bg-[url("Main.png")]'>
+            <div className='flex flex-col sm:min-h-[70vh] items-center justify-center home'>
                 <div className='h-[3.8rem] w-full'></div>
                 <div className='flex flex-col justify-between bg-[#fff5] backdrop-blur-[5px] items-center border-1 w-[22rem] sm:w-[50rem] min-h-[15rem] p-[1rem] my-[4rem] sm:my-[8rem]'>
                     <h1 className='text-2xl mb-6'>Profile</h1>

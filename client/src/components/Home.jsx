@@ -37,7 +37,7 @@ function Home() {
 }
   return (
     <div>
-                <div id='home' className="h-[100vh] bg-red-300 overflow-hidden bg-[url('Main.png')]">
+                <div id='home' className="h-[100vh] bg-red-300 overflow-hidden home" >
                     {/* <img className='w-[150vw]' src="Main.png" alt="VeggieCart" /> */}
                     <h4 className='text-blue-400 text-start my-[12rem] mx-8 w-[22rem] sm:max-lg:w-[32rem] lg:w-[40rem] text-[26px] sm:max-lg:text-4xl lg:text-5xl font-semibold'>Get premium quality veggies at best price</h4>
                     <div 

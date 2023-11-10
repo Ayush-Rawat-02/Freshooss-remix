@@ -10,7 +10,7 @@ body{
 }
 
 .adminbg{
-    background: url('AdminBG.jpeg');
+    background: url('/src/assets/AdminBG.jpeg');
     background-size: 100%;
     @media (max-width: 1056px) and (min-width:800px){
         background-size: 120%;
@@ -27,4 +27,11 @@ body{
     /* @media (max-width: 1056px){
         background-size: 120%;
     } */
+}
+
+.home{
+    background: url('/src/assets/Main.png');
+}
+.prediction{
+    background: url('/src/assets/Prediction.jpeg');
 }

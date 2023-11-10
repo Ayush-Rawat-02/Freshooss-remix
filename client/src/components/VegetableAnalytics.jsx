@@ -70,7 +70,7 @@ function VegetableAnalytics() {
     },[])
 
     return (
-        <div className='flex flex-col items-center justify-center min-h-[67.1vh] bg-[url("Prediction.jpeg")]'>
+        <div className='flex flex-col items-center justify-center min-h-[67.1vh] prediction'>
             {initializing&&
             <div className='fixed top-[3.8rem] left-0 flex justify-center items-center w-screen h-screen bg-[#0007] backdrop-blur-[2px] z-[99]'>
                 <h1 className='text-4xl font-bold text-white'>Connecting to server...</h1>
