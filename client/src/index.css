@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    /* background: #000; */
+}
+*{
+    scroll-behavior: smooth;
+}
+
+.adminbg{
+    background: url('AdminBG.jpeg');
+    background-size: 100%;
+    @media (max-width: 1056px) and (min-width:800px){
+        background-size: 120%;
+        background-position: -40px 0px;
+    };
+    @media (max-width: 900px) and (min-width: 600px){
+        background-size: 150%;
+        background-position: -120px 0px;
+    };
+    @media (max-width: 600px){
+        background-size: 190%;
+        background-position: -190px 0px;
+    }
+    /* @media (max-width: 1056px){
+        background-size: 120%;
+    } */
+}
